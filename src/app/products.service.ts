@@ -7,7 +7,7 @@ import { Product } from './product.model';
 @Injectable({ providedIn: 'root' })
 export class ProductsService {
   private readonly http = inject(HttpClient);
-  private readonly url = 'http://localhost:3000/api/products';
+  private readonly url = 'https://lash-studio-api.onrender.com/api/products';
 
   // Отримання всіх послуг
   list(): Observable<Product[]> {
